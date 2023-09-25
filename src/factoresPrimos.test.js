@@ -1,3 +1,5 @@
+import primos from "./numerosPrimos";
+
 describe("FCATORES PRIMOS", () => {
   it("Deberia retornar una lista vacia para 1", () => {
     const primosfac = new primos
@@ -18,20 +20,3 @@ describe("FCATORES PRIMOS", () => {
 });
 
 
-class primos{
-  factorprimo(n){
-    let resulprimos = [];
-    if (n>1)
-    {
-      if (n%2 === 0){
-        resulprimos.push(2);
-        n/=2;
-      }
-      if (n>1)
-      {
-        resulprimos.push(n);
-      }
-    }
-    return resulprimos;
-  }
-}
